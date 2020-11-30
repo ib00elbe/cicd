@@ -1,0 +1,3 @@
+com\cicd\calculator\domain\CalculatorTest.class
+com\cicd\calculator\domain\InspirationTest.class
+com\cicd\calculator\domain\WebIntegrationTest.class

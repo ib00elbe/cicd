@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="headerfiles">
+    <meta charset="UTF-8">
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
+</head>
+<body>
+    <div th:fragment="header">
+        <h1>CI/CD Miniräknare</h1>
+        <div>
+           <p> Välkommen till CI/CD Miniräknaren. Här kan du enkelt räkna med alla 4 räknesätten.</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/add">Addition</a> </li>
+                <li><a href="/subtract">Subtraktion</a></li>
+                <li><a href="/multiply">Multiplikation</a></li>
+                <li><a href="/divide">Division</a></li>
+                <li style="float:right"><a href="/quote">Citat</a></li>
+
+            </ul>
+        </div>
+        <hr class="top">
+    </div>
+    <div th:fragment="footer">
+        <hr class="footer">
+        <h3>Varför?</h3>
+        <p>Denna sida skapades för att användas på en kurs för <a href="https://www.molndal.se/campus-molndal.html">Campus Mölndal</a></p>
+    </div>
+</body>
+</html>

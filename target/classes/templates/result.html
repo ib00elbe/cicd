@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <th:block th:include="fragments.html :: headerfiles"></th:block>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div th:replace="fragments.html :: header"></div>
+    <div class="calc-content">
+	    <h1>Result</h1>
+        <h3><p th:text="${result}" /></h3>
+    </div>
+    <div th:replace="fragments.html :: footer"></div>
+</body>
+</html>

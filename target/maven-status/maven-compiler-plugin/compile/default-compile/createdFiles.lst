@@ -1,0 +1,5 @@
+com\cicd\calculator\domain\Inspiration.class
+com\cicd\calculator\CalculatorController.class
+com\cicd\calculator\InspirationController.class
+com\cicd\calculator\domain\Calculator.class
+com\cicd\calculator\CalculatorApplication.class

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Calculator - SUBTRACT</title>
+    <th:block th:include="fragments.html :: headerfiles"></th:block>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div th:replace="fragments.html :: header"></div>
+<div class="calc-content">
+    <h3>Subtraktion</h3>
+    <form action="#" th:action="@{/subtract}" th:object="${calculator}" method="post">
+        <table>
+            <tbody>
+            <tr>
+                <td>Term:</td>
+                <span class="error" th:if="${#fields.hasErrors('firstValue')}" >Fyll i ett heltal.<br/></span>
+                <td><input type="text" th:field="*{firstValue}" /></td>
+            </tr>
+            <tr>
+                <td>Term:</td>
+                <span class="error" th:if="${#fields.hasErrors('secondValue')}">Fyll i ett heltal.</span>
+                <td><input type="text" th:field="*{secondValue}" /></td>
+            </tr>
+            </tbody>
+        </table>
+        <p><input type="submit" class="submit-btn" value="Subtrahera" /></p>
+    </form>
+</div>
+<div th:replace="fragments.html :: footer"></div>
+</body>
+</html>
